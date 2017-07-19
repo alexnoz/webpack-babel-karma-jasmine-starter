@@ -1,0 +1,63 @@
+{
+  "name": "webpack-babel-karma-jasmine-starter",
+  "version": "0.0.1",
+  "description": "Babel Webpack Karma Jasmine boilerplate for building libraries",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "karma start --single-run --no-auto-watch",
+    "test:watch": "karma start",
+    "prebuild": "rimraf lib",
+    "build": "webpack --env production",
+    "start": "nodemon --watch webpack.config.js --exec \"webpack --progress --watch --env development\""
+  },
+  "keywords": [
+    "webpack",
+    "karma",
+    "jasmine",
+    "babel",
+    "istanbul",
+    "starter",
+    "boilerplate"
+  ],
+  "author": "Alex Nozdriukhin <alex-nozzz@mail.ru>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-istanbul": "^4.1.4",
+    "babel-preset-env": "^1.6.0",
+    "babili-webpack-plugin": "^0.1.2",
+    "chalk": "^2.0.1",
+    "clean-webpack-plugin": "^0.1.16",
+    "eslint": "^4.2.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-compat": "^1.0.4",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jasmine": "^2.7.1",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "friendly-errors-webpack-plugin": "^1.6.1",
+    "html-webpack-plugin": "^2.29.0",
+    "jasmine-core": "^2.6.4",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-mocha-reporter": "^2.2.3",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^2.0.4",
+    "nodemon": "^1.11.0",
+    "rimraf": "^2.6.1",
+    "webpack": "^3.3.0",
+    "webpack-merge": "^4.1.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "engines": {
+    "node": ">=6.0.0"
+  }
+}
