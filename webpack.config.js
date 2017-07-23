@@ -19,13 +19,7 @@ const lintJSOptions = {
   // Toggle autofix
   fix: true,
 
-  formatter: require('eslint-friendly-formatter'),
-
-  // Output to Jenkins compatible XML
-  outputReport: {
-    filePath: 'checkstyle.xml',
-    formatter: require('eslint/lib/formatters/checkstyle')
-  }
+  formatter: require('eslint-friendly-formatter')
 };
 
 const commonConfig = merge([
