@@ -13,6 +13,12 @@ A simple Webpack boilerplate for building client-based libraries in ES6.
   * [promise](https://github.com/xjamundx/eslint-plugin-promise) plugin
   * [jasmine](https://github.com/tlvince/eslint-plugin-jasmine) plugin
 
+## Getting started
+
+1. Run `npm install` to get the project's dependencies
+2. Open `webpack.config.js` and change the `output.library` property to the name of your library
+3. Run `npm start` to start developing
+
 ## Scripts
 
 * `npm start` - produces a non-minified dev version of your library and runs a watcher for the webpack config and for the library
