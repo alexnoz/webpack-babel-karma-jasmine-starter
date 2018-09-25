@@ -2,7 +2,8 @@ const merge = require('webpack-merge');
 
 const webpackConfig = merge([
   {
-    devtool: '#inline-source-map'
+    devtool: '#inline-source-map',
+    mode: 'none'
   },
   require('./webpack.parts').loadJS({
     exclude: /node_modules/

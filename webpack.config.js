@@ -44,6 +44,7 @@ const commonConfig = merge([
 const libraryConfig = merge([
   commonConfig,
   {
+    mode: 'development',
     output: {
       filename: '[name].js'
     }
@@ -53,6 +54,7 @@ const libraryConfig = merge([
 const libraryMinConfig = merge([
   commonConfig,
   {
+    mode: 'production',
     output: {
       filename: '[name].min.js'
     }
