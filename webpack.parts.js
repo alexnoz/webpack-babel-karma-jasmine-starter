@@ -38,10 +38,6 @@ exports.minifyJS = () => ({
   ],
 });
 
-exports.generateSourceMaps = ({ type }) => ({
-  devtool: type,
-});
-
 exports.setFreeVariable = (key, value) => {
   const env = {};
   env[key] = JSON.stringify(value);

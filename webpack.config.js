@@ -24,6 +24,7 @@ const lintJSOptions = {
 
 const commonConfig = merge([
   {
+    devtool: 'source-map',
     entry: {
       lib: paths.lib
     },
@@ -37,7 +38,6 @@ const commonConfig = merge([
     ]
   },
   parts.lintJS({ include: paths.lib, options: lintJSOptions }),
-  parts.generateSourceMaps({ type: 'source-map' }),
   parts.loadJS({ include: paths.lib })
 ]);
 
