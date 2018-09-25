@@ -15,13 +15,13 @@ A simple Webpack boilerplate for building client-based libraries in ES6.
 
 ## Getting started
 
-1. Run `npm install` to get the project's dependencies
+1. Run `yarn install` to get the project's dependencies
 2. Open `webpack.config.js` and change the `output.library` property to the name of your library
-3. Run `npm start` to start developing
+3. Run `yarn start` to start developing
 
 ## Scripts
 
-* `npm start` - produces a non-minified dev version of your library and runs a watcher for the webpack config and for the library
-* `npm run build` - produces both a non-minified and a minified production versions of your library
-* `npm test` - runs tests and generates a coverage report under the `coverage` folder
-* `npm test:watch` - runs tests in the watch mode
+* `yarn start` - produces a non-minified dev version of your library and runs a watcher for the webpack config and for the library
+* `yarn build` - produces both a non-minified and a minified production versions of your library
+* `yarn test` - runs tests and generates a coverage report under the `coverage` folder
+* `yarn test:watch` - runs tests in the watch mode
