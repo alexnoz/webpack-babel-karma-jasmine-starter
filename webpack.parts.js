@@ -1,5 +1,5 @@
 const webpack = require('webpack');
-const BabiliPlugin = require('babili-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 exports.lintJS = ({ include, exclude, options }) => ({
   module: {
@@ -32,10 +32,12 @@ exports.loadJS = ({ include, exclude, options } = {}) => ({
   },
 });
 
-exports.minifyJS = () => ({
-  plugins: [
-    new BabiliPlugin(),
-  ],
+exports.minifyJS = options => ({
+  optimization: {
+    minimizer: [
+      new TerserPlugin(options)
+    ],
+  },
 });
 
 exports.setFreeVariable = (key, value) => {
