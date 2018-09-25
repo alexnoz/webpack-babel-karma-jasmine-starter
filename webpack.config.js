@@ -4,7 +4,7 @@ const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
 
 const parts = require('./webpack.parts');
 
-const PATHS = {
+const paths = {
   lib: path.join(__dirname, 'src'),
   build: path.join(__dirname, 'lib')
 };
@@ -25,10 +25,10 @@ const lintJSOptions = {
 const commonConfig = merge([
   {
     entry: {
-      lib: PATHS.lib
+      lib: paths.lib
     },
     output: {
-      path: PATHS.build,
+      path: paths.build,
       library: 'Demo',
       libraryTarget: 'umd'
     },
@@ -36,9 +36,9 @@ const commonConfig = merge([
       new FriendlyErrorsPlugin()
     ]
   },
-  parts.lintJS({ include: PATHS.lib, options: lintJSOptions }),
+  parts.lintJS({ include: paths.lib, options: lintJSOptions }),
   parts.generateSourceMaps({ type: 'source-map' }),
-  parts.loadJS({ include: PATHS.lib })
+  parts.loadJS({ include: paths.lib })
 ]);
 
 const libraryConfig = merge([
