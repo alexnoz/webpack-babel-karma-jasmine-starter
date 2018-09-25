@@ -19,7 +19,7 @@ module.exports = {
   parser: 'babel-eslint',
   parserOptions: {
     sourceType: 'module',
-    ecmaVestion: 7,
+    ecmaVersion: 9,
     allowImportExportEverywhere: true
   },
   rules: {
@@ -33,11 +33,11 @@ module.exports = {
     'import/namespace': 2,
     'import/default': 2,
     'import/export': 2,
-    indent: ['error', 2],
+    indent: [2, 2],
     'linebreak-style': 0,
-    quotes: ['error', 'single'],
-    semi: ['error', 'always'],
-    'no-unused-vars': ['warn'],
+    quotes: [2, 'single'],
+    semi: [2, 'always'],
+    'no-unused-vars': 1,
     'no-console': 0
   }
 };
