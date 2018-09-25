@@ -98,13 +98,8 @@ const libraryMinConfig = merge([
   })
 ]);
 
-module.exports = env => {
-  if (env === 'production') {
-    return [
-      libraryMinConfig,
-      libraryConfig
-    ];
-  }
-
-  return libraryConfig;
-};
+module.exports = env => (
+  env === 'production'
+    ? [libraryMinConfig, libraryConfig]
+    : libraryConfig
+);
