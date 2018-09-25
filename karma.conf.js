@@ -9,7 +9,7 @@ const webpackConfig = merge([
   })
 ]);
 
-module.exports = function (config) {
+module.exports = config => {
   const src = './src/**/*.js';
   const tests = './test/index.js';
 
@@ -40,8 +40,7 @@ module.exports = function (config) {
     ],
 
     // list of files to exclude
-    exclude: [
-    ],
+    // exclude: [],
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
