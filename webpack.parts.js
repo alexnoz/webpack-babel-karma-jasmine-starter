@@ -1,4 +1,3 @@
-const webpack = require('webpack');
 const TerserPlugin = require('terser-webpack-plugin');
 
 exports.lintJS = ({ include, exclude, options }) => ({
@@ -39,14 +38,3 @@ exports.minifyJS = options => ({
     ],
   },
 });
-
-exports.setFreeVariable = (key, value) => {
-  const env = {};
-  env[key] = JSON.stringify(value);
-
-  return {
-    plugins: [
-      new webpack.DefinePlugin(env),
-    ],
-  };
-};
