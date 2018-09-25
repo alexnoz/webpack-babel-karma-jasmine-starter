@@ -10,6 +10,7 @@ const webpackConfig = merge([
 ]);
 
 module.exports = function (config) {
+  const src = './src/**/*.js';
   const tests = './test/index.js';
 
   process.env.BABEL_ENV = 'karma';
@@ -34,6 +35,7 @@ module.exports = function (config) {
 
     // list of files / patterns to load in the browser
     files: [
+      src,
       tests
     ],
 
@@ -44,6 +46,7 @@ module.exports = function (config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      [src]: ['webpack'],
       [tests]: ['webpack', 'sourcemap']
     },
 
