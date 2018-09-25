@@ -1,21 +1,15 @@
 import add from './../src/add';
 
 describe('Add function', () => {
-  it('should be a function', done => {
+  it('should be a function', () => {
     expect(typeof add).toBe('function');
-
-    done();
   });
 
-  it('should return correct result', done => {
+  it('should return correct result', () => {
     expect(add(2, 5)).toBe(7);
-
-    done();
   });
 
-  it('should return NaN if called without arguments', done => {
+  it('should return NaN if called without arguments', () => {
     expect(add()).toBeNaN();
-
-    done();
   });
 });
