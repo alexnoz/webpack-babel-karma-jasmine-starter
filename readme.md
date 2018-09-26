@@ -1,17 +1,17 @@
 # Webpack Babel Karma Jasmine Starter
 
-A simple Webpack boilerplate for building client-based libraries in ES6.
+A simple Webpack 4 boilerplate for building client-based libraries.
 
 ## Features
 
 * Test setup with [Jasmine](https://jasmine.github.io/) and [Karma](https://karma-runner.github.io/1.0/index.html)
 * Code coverage with [Istanbul](https://istanbul.js.org)
 * [ESLint](http://eslint.org/) with the following plugins:
-  * [import](https://github.com/benmosher/eslint-plugin-import) plugin
-  * [node](https://github.com/mysticatea/eslint-plugin-node) plugin
-  * [compat](https://github.com/amilajack/eslint-plugin-compat) plugin
-  * [promise](https://github.com/xjamundx/eslint-plugin-promise) plugin
-  * [jasmine](https://github.com/tlvince/eslint-plugin-jasmine) plugin
+  * [import](https://github.com/benmosher/eslint-plugin-import)
+  * [node](https://github.com/mysticatea/eslint-plugin-node)
+  * [compat](https://github.com/amilajack/eslint-plugin-compat)
+  * [promise](https://github.com/xjamundx/eslint-plugin-promise)
+  * [jasmine](https://github.com/tlvince/eslint-plugin-jasmine)
 
 ## Getting started
 
