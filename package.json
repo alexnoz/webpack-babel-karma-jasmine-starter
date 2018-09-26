@@ -10,6 +10,10 @@
     "build": "webpack --env production",
     "start": "nodemon --watch webpack.config.js --exec \"webpack --progress --watch --env development\""
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexnoz/webpack-babel-karma-jasmine-starter.git"
+  },
   "keywords": [
     "webpack",
     "karma",
